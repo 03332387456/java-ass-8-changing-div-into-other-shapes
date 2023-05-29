@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shape{
+    width: 300px;
+    height: 300px;
+    margin: 90px;
+
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: darkblue;
+
+}
+.square{
+    border-radius: 0%;
+    background-color: darkblue;
+
+}
+.rectangle {
+  width: 200px; 
+  height: 100px; 
+  background-color: darkblue;
+
+}
+
+.btn1{
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.btn2{
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    width: 90px;
+
+}
+
+
+.btn3{
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    background-color: black;
+    width: 130px;
+    height: 70px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<h1>Changing Div into other shapes</h1>
+
+    <div class="shape" id="shape"></div>
+
+    <button onclick="forcircle()" class="btn1">click for circle</button>
+    <button onclick="forsquare()" class="btn2">click for square</button>
+    <button onclick="fortriangle()" class="btn3">click for rectangle</button>
+
+
+
+
+<script>
+
+    var a = document.getElementById("shape")
+function forcircle() {
+    a.className = "shape circle" 
+}
+
+
+
+
+function forsquare() {
+    var shape = document.getElementById("shape");
+    shape.className = "shape square";
+  }
+
+
+  
+  function fortriangle() {
+    var shape = document.getElementById("shape");
+    shape.className = "shape rectangle";
+  }
+
+</script>
+
+<script src="app.js"></script>
+    
+</body>
+</html>
